@@ -75,8 +75,8 @@ if ! grep -q "alias oc=" "$HOME/.bashrc" 2>/dev/null; then
 else
     print_warn "别名已存在，跳过"
 fi
-
-rm -f $HOME/opencode_1.17.3_aarch64.deb
+# 删除原本复制的文件
+rm -f ~/opencode_1.17.3_aarch64.deb
 
 echo ""
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
