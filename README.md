@@ -14,6 +14,10 @@
 
 [OpenCode](https://github.com/opencode-ai/opencode) 是一个强大的 AI 编程助手，支持 Claude、OpenAI、DeepSeek 等多种 AI 模型，可直接在终端中帮助你编写、调试和解释代码。
 [opencode-termux](https://github.com/Hope2333/opencode-termux) 由这个项目提供的可以在termux编译的opencode的文件
+
+---
+
+
 本项目提供了：
 
 | 特性 | 说明 |
