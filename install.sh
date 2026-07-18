@@ -59,8 +59,6 @@ apt install -y "$DEB_FILE" > /dev/null 2>&1
 print_ok "OpenCode 安装完成"
 
 
-# 删除原本复制的文件
-rm -f ~/opencode_1.17.3_aarch64.deb
 
 echo ""
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
