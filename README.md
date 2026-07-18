@@ -16,6 +16,8 @@
 
 [opencode-termux](https://github.com/Hope2333/opencode-termux) 由这个项目提供的可以在termux编译的opencode的文件
 
+项目的[opencode_1.17.3_aarch64.deb](https://github.com/mingce123/opencode_1.17.3_aarch64.deb)文件是我自己在termux编译的arm64版本
+
 ---
 
 
