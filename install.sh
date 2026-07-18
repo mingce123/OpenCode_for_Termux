@@ -58,23 +58,7 @@ print_step "安装 OpenCode..."
 apt install -y "$DEB_FILE" > /dev/null 2>&1
 print_ok "OpenCode 安装完成"
 
-print_step "创建启动脚本..."
-cat > "$HOME/run-opencode" << 'EOF'
-#!/data/data/com.termux/files/usr/bin/bash
-unset LD_LIBRARY_PATH
-unset LD_PRELOAD
-exec /data/data/com.termux/files/usr/glibc/lib/ld-linux-aarch64.so.1 /data/data/com.termux/files/usr/bin/opencode "$@"
-EOF
-chmod +x "$HOME/run-opencode"
-print_ok "启动脚本创建完成: ~/run-opencode"
 
-print_step "添加别名到 .bashrc..."
-if ! grep -q "alias oc=" "$HOME/.bashrc" 2>/dev/null; then
-    echo 'alias oc="~/run-opencode"' >> "$HOME/.bashrc"
-    print_ok "别名已添加"
-else
-    print_warn "别名已存在，跳过"
-fi
 # 删除原本复制的文件
 rm -f ~/opencode_1.17.3_aarch64.deb
 
