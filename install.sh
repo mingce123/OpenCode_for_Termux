@@ -18,6 +18,9 @@ print_error() { echo -e "${RED}❌${NC} $1"; }
 
 termux-setup-storage
 
+#复制 deb 包到 Termux 环境
+cp "./opencode_1.17.3_aarch64.deb" "$HOME/opencode_1.17.3_aarch64.deb"
+
 # 检查架构
 ARCH=$(uname -m)
 if [ "$ARCH" != "aarch64" ]; then
@@ -73,10 +76,13 @@ else
     print_warn "别名已存在，跳过"
 fi
 
+rm -f $HOME/opencode_1.17.3_aarch64.deb
+
 echo ""
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${GREEN}🎉 OpenCode 安装完成！${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+rm 
 echo ""
 echo "📝 使用方法："
 echo ""
