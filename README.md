@@ -38,7 +38,7 @@
 | 项目 | 要求 |
 |------|------|
 | 设备架构 | ARM64 (aarch64) |
-| 运行环境 | Termux（[下载地址](https://termux.com/)） |
+| 运行环境 | Termux（[下载地址](https://github.com/termux/termux-app)） |
 | 存储空间 | 约 200MB |
 | 网络 | 需要联网下载 glibc 依赖（约 30MB） |
 
