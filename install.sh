@@ -59,12 +59,13 @@ apt install -y "$DEB_FILE" > /dev/null 2>&1
 print_ok "OpenCode 安装完成"
 
 
+cd ..
+rm opencode_1.17.3_aarch64.deb
 
 echo ""
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${GREEN}🎉 OpenCode 安装完成！${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-rm 
 echo ""
 echo "📝 使用方法："
 echo ""
